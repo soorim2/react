@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr=[10,20,30,40,50];
+        const data=[
+            {id:1,text:'홍길동',age:10},
+            {id:2,text:'홍길도',age:20},
+            {id:3,text:'홍기동',age:30},
+            {id:4,text:'호길동',age:40},
+            {id:5,text:'홍기도',age:50},
+        ]
+
+        const re1 = arr.filter(item => item>20);
+        console.log(re1)
+        //filter->[]
+
+        const re2 = data.filter(item => item.id !==4)
+        console.log(re2)
+
+        const re3 = data.filter((item,index)=>index>2).map(item => console.log(item.text))
+        //find / findIndex - 결과가 1개만 {}
+
+        //배열.find(변수 => 조건)
+        const re4 = arr.find(item => item>20)
+        console.log(re4)
+
+        const re5 = data.find(item => item.id ===2)
+        console.log(re5)
+
+        //findIndex 인덱스 번호 추출
+        const re6 = arr.findIndex(item => item>30)
+        console.log(re6)
+
+        const re7 = arr.findIndex(item => item.id===2)
+        console.log(re7)
+    </script>
+</body>
+</html>
