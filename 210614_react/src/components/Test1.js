@@ -1,36 +1,36 @@
 import React, { useState } from 'react';
 
 const Test1 = () => {
-    const [name, setName] = useState('아무개')
-    const [color, setColor] = useState('green')
+	const [name, setName] = useState('아무개');
+	const [color, setColor] = useState('green');
 
-    const onName1 = () =>{
-        setName('click1')
-    }
-    const onName2 = () =>{
-        setName('click2')
-    }
-    const onName3 = () =>{
-        setName('click3')
-    }
-    return (
-        <div>
-            <h2 style={{color:color}}>이름 : {name}</h2>
-            <h2>컬러 : {color}</h2>
-            {/* 함수 분리 후 호출 */}
-            <p>
-                <button onClick={onName1}>btn1</button>
-                <button onClick={onName2}>btn2</button>
-                <button onClick={onName3}>btn3</button>
-            </p>
-            {/* 간단할 경우 한줄로 표현 */}
-            <p>
-                <button onClick={()=>setColor=('pink')}>pink</button>
-                <button onClick={()=>setColor=('olive')}>olive</button>
-                <button onClick={()=>setColor=('purple')}>purple</button>
-            </p>
-        </div>
-    );
+	const onName1 = () => {
+		setName('click1');
+	};
+	const onName2 = () => {
+		setName('click2');
+	};
+	const onName3 = () => {
+		setName('click3');
+	};
+	return (
+		<div>
+			<h2>이름 : {name}</h2>
+			<h2 style={{ color: color }}>컬러 : {color}</h2>
+			{/* 함수 분리 후 호출 */}
+			<p>
+				<button onClick={onName1}>btn1</button>
+				<button onClick={onName2}>btn2</button>
+				<button onClick={onName3}>btn3</button>
+			</p>
+			{/* 간단할 경우 한줄로 표현 */}
+			<p>
+				<button onClick={() => setColor('pink')}>pink</button>
+				<button onClick={() => setColor('olive')}>olive</button>
+				<button onClick={() => setColor('skyblue')}>skyblue</button>
+			</p>
+		</div>
+	);
 };
 
 export default Test1;
