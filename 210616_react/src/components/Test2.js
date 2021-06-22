@@ -5,6 +5,7 @@ const Test2 = () => {
     const click = (e) => {
         console.log(e.target) // 내가 선택한 대상
         console.log(e.currentTarget) // 이벤트가 걸린 대상
+        console.log('-------------------------------')
     }
     return (
         <div>

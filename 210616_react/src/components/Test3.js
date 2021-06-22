@@ -23,10 +23,10 @@ const Test3 = () => {
     return (
         <div>
             <input type='text' onChange={changeInput1} value={userid} />
-            <input type='text' onChange={changeInput2} value={userpw}/>
+            <input type='text' onChange={changeInput2} value={userpw} />
             <button onClick={onReset}>초기화</button>
             <h2>id : {userid}</h2>
-            <h2>pw: {userpw}</h2>
+            <h2>pw : {userpw}</h2>
         </div>
     );
 };
