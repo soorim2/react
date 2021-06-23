@@ -1,10 +1,17 @@
 import React from 'react';
 
-const FriendItem = () => {
+const FriendItem = ({item}) => {
+    const {name, image, age} = item
     return (
-        <div>
-            
-        </div>
+        <li>
+            <p>
+                <img src={image} alt={name}/>
+            </p>
+            <div>
+                <strong>이름 : {name}</strong>
+                <span>나이 : {age}</span>
+            </div>
+        </li>
     );
 };
 

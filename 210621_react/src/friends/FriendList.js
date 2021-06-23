@@ -1,10 +1,14 @@
 import React from 'react';
-
-const FriendList = () => {
+import FriendItem from './FriendItem';
+const FriendList = ({data}) => {
     return (
-        <div>
-            
-        </div>
+        <ul>
+            {
+                data.map((item, index) => 
+                    <FriendItem key={item.id} item={item}/>
+                )
+            }
+        </ul>
     );
 };
 
