@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react';
-import { npost } from 'q';
 
 const Test8 = () => {
     const no = useRef(1) //고유값

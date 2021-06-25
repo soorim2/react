@@ -1,20 +1,23 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 
 const Test5 = () => {
     const colorRef = useRef(null)
+    const [color, setColor] = useState('black')
+    
 
     const onColor = ()  => {
         const data = {
             color: colorRef.current.value 
         }
         console.log( data )
-        const json  = JSON.stringify( data, null , 5 )
+        const json  = JSON.stringify( data, null , 5 );
         console.log( json )
+        setColor(data.color)
     }
     return (
         <div>
-            <h2>컬러선택</h2>
-            <select  ref={ colorRef }>
+            <h2 style={{color:color}}>컬러선택</h2>
+            <select ref={ colorRef }>
                 <option value="red">red</option>
                 <option value="green">green</option>
                 <option value="pink">pink</option>
