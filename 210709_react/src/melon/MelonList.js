@@ -2,7 +2,7 @@ import React from 'react';
 import './MelonList.css'
 import MelonItem from './MelonItem';
 
-const MelonList = ({musics}) => {
+const MelonList = ({musics,onLike}) => {
     return (
         <div className="MelonList">
             <table>
@@ -27,7 +27,7 @@ const MelonList = ({musics}) => {
                 <tbody>
                     {
                         musics.map(music=>
-                        <MelonItem key={music.id} music={music}/>
+                        <MelonItem key={music.id} music={music} onLike={onLike}/>
                         )
                     }
                 </tbody>
