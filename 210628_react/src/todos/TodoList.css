@@ -1,7 +1,0 @@
-.TodoList{}
-.TodoList li{background:#FFF;padding: 15px 30px; color:rgb(15, 36, 17); border-bottom:1px solid #eaeaea;}
-.TodoList li span{margin-right: 25px; color:dodgerblue; font-size:20px;}
-.TodoList li em{cursor: pointer;}
-.TodoList li.on em{color:dodgerblue; text-decoration: line-through;}
-.TodoList li button{float: right; color:#ccc; background:none; border:none;
-font-size:20px}
