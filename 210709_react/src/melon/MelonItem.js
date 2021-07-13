@@ -4,7 +4,7 @@ import { FcLikePlaceholder,FcLike } from "react-icons/fc";
 import { HiOutlineVideoCamera } from "react-icons/hi";
 import { BiCaretUp,BiCaretDown } from "react-icons/bi";
 import { IoEllipsisHorizontalCircleOutline } from "react-icons/io5";
-const MelonItem = ({music}) => {
+const MelonItem = ({music,onLike}) => {
     const {title,singer,poster,state,id,key,like,done,album,rank}=music
     return (
         <tr>
@@ -17,7 +17,12 @@ const MelonItem = ({music}) => {
                 </p>
             </td>
             <td>{album}</td>
-            <td><i><FcLikePlaceholder/></i>
+            <td className="like">
+                <i onClick={()=>onLike(id)}>
+                    {
+                        done? <FcLike/>:  <FcLikePlaceholder/>
+                    }
+                </i>
                 {/* 천단위로 ,표시 */}
                 {Numeral(like).format(0,0)}
             </td>
