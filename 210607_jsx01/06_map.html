@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const arr1 = [10,20,30,40,50];
+
+        // arr1.map((변수, 인덱스) => {
+        //     return ()
+        // })
+        arr1.map((item, index) => {
+            return (console.log(item, index))
+        });
+        console.log('-----------');
+        arr1.map((item, index)=> {
+            console.log(item,index)
+        })
+        console.log('-----------');
+        // 출력하는 결과가 1개일 때 (블럭으로 묶지 않아도 된다.)
+        arr1.map((item, index) => console.log(item,index))
+
+        // for (let i=0; i<arr1.length; i++){
+        //     console.log(i)
+        // }
+
+        // for(let item of arr1){
+        //     console.log(item)
+        //     // 값을 반복하면서 출력
+        // }
+
+        // for(let item in arr1){
+        //     console.log(item)
+        //     // 인덱스번호 출력
+        // }
+
+    </script>
+</head>
+<body>
+    <pre>
+        1.for : JSX 사용 불가 for~in / for-of
+        2.map : JSX 반복문 
+        기본형식
+        배열객체.map ((변수, 인덱스) => {
+            return()
+        })
+    </pre>
+</body>
+</html>

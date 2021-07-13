@@ -1,0 +1,5 @@
+.TodoInput{text-align: center;padding: 15px 10px;background: #FAFAFA;}
+.TodoInput input{width: calc(100% - 140px);height: 45px; box-sizing: border-box; padding: 0 20px; border: 1px solid #ccc; vertical-align: top;}
+.TodoInput button{width: 100px; height: 45px;font-size: 16px;background-color: #fff;border-width: 1px; border-color: none;
+border-left: none;
+}

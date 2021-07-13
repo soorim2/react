@@ -1,0 +1,5 @@
+.wrap{width: 400px;margin: 10px;}
+.wrap div{padding: 20px;border: 1px solid #000;margin-bottom: 10px;}
+.wrap div.test{border-width: 7px; border-color: red;}
+.wrap div.on{background: yellow;}
+.wrap button{padding:10px 20px; margin-right: 5px;}
