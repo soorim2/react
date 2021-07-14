@@ -1,0 +1,6 @@
+.conBox {
+    width: 1300px; margin: auto; display: flex;
+}
+.conBox article { width: 250px; height: 150px; margin: 30px; background: yellow; padding: 20px; }
+
+.conBox article  h3 { font-size: 45px; color:green }
