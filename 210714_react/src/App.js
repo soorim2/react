@@ -1,5 +1,5 @@
 import React from 'react';
-import Test2 from './components/Test2';
+import Test5 from './components/Test5';
 ///// module.css 예시
 // import Header1 from './project1/Header';
 // import Header2 from './project2/Header';
@@ -14,7 +14,7 @@ const App = () => {
         <Header2/>
         <Content1/>
         <Content2/> */}
-        <Test2/>
+        <Test5/>
     </div>
   );
 };
