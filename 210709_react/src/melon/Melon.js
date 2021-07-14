@@ -68,7 +68,7 @@ const Melon = () => {
         setIsShow(true)
         setMusicNum(
             musics.find(music=>
-                music.id ===id
+                music.id === id
             )
         )
 
