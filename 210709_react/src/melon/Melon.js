@@ -83,9 +83,7 @@ const Melon = () => {
             <h2>멜론순위 {getDate()} 인기차트</h2>
             <MelonForm onSearch={onSearch} />
             <MelonList musics={musics} onLike={onLike} onOpen={onOpen}/>
-            {
-                isShow? <Modal musicNum={musicNum} onClose={onClose}/> : ''
-            }
+            {isShow&& <Modal musicNum={musicNum} onClose={onClose}/> }
         </div>
     );
 };
