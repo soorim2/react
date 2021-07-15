@@ -3,9 +3,8 @@ import Numeral from "numeral";
 import { FcLikePlaceholder,FcLike } from "react-icons/fc";
 import { HiOutlineVideoCamera } from "react-icons/hi";
 import { BiCaretUp,BiCaretDown } from "react-icons/bi";
-import { IoEllipsisHorizontalCircleOutline } from "react-icons/io5";
-const MelonItem = ({music,onLike}) => {
-    const {title,singer,poster,state,id,key,like,done,album,rank}=music
+const MelonItem = ({music,onLike,onOpen}) => {
+    const {title,singer,poster,state,id,like,done,album,rank}=music
     return (
         <tr>
             <td>{rank}</td>
@@ -26,7 +25,7 @@ const MelonItem = ({music,onLike}) => {
                 {/* 천단위로 ,표시 */}
                 {Numeral(like).format(0,0)}
             </td>
-            <td><i><HiOutlineVideoCamera/></i></td>
+            <td><i onClick={()=>{onOpen(id)}}><HiOutlineVideoCamera/></i></td>
             <td>
                 {
                     state === '상승' && <i><BiCaretUp color="red"/></i>
