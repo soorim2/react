@@ -1,0 +1,16 @@
+{
+  "plans": [
+    {
+      "text": "adasd",
+      "day": "asdasd",
+      "done": false,
+      "id": 6
+    },
+    {
+      "text": "dldlf일정추가",
+      "day": "지금",
+      "done": true,
+      "id": 7
+    }
+  ]
+}
